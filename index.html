@@ -12,6 +12,8 @@
   <meta property="og:image" content="social-card.png">
   <link rel="canonical" href="https://ceogonchar.github.io/podcast-studio-systems/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230b0f11'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%236ff0c3' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%236ff0c3'/%3E%3C/svg%3E">
+  <!-- Official Calendly popup stylesheet is dynamically versioned; no stable SRI hash is published. -->
+  <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
   <style>
     :root{
       --ink:#080b0e;--ink2:#0d1216;--panel:#11181d;--panel2:#151e24;
@@ -40,8 +42,8 @@
     .timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:54px}.phase{padding:23px 18px;min-height:185px;border-top:1px solid var(--line)}.phase .pn{font-size:11px;color:var(--mint);font-weight:850;letter-spacing:.12em}.phase h3{font-size:17px;margin:25px 0 10px}.phase p{font-size:13px;color:var(--muted)}
     .accept{display:grid;grid-template-columns:.92fr 1.08fr;gap:74px;align-items:center}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:12px}.check{padding:17px 17px 17px 47px;border:1px solid var(--line);border-radius:14px;position:relative;color:#cdd5d1;font-size:14px;background:rgba(255,255,255,.022)}.check:before{content:"✓";position:absolute;left:18px;color:var(--mint);font-weight:950}.proofnote{margin-top:20px;color:var(--muted2);font-size:12px}
     .faq{display:grid;grid-template-columns:.68fr 1.32fr;gap:80px}.faq-list{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:0}summary{cursor:pointer;list-style:none;font-size:18px;font-weight:760;padding:23px 44px 23px 0;position:relative}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:4px;top:18px;font-size:28px;color:var(--mint);font-weight:400}details[open] summary:after{content:"−"}.answer{color:var(--muted);padding:0 45px 24px 0;max-width:740px}
-    .cta-section{padding:118px 0;background:linear-gradient(145deg,#111d18,#0a0f0d 58%,#17120d);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.cta-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:54px;align-items:start}.booking-shell{background:#fff;border:1px solid rgba(116,242,191,.28);border-radius:30px;overflow:hidden;min-height:720px;box-shadow:0 28px 90px rgba(0,0,0,.36)}.calendly-inline-widget{min-width:320px;height:720px}.booking-fallback{display:none;padding:24px;text-align:center;background:#0d1411;color:var(--white)}.booking-points{display:grid;gap:12px;margin:32px 0}.booking-point{display:flex;align-items:flex-start;gap:11px;color:var(--muted);font-size:14px}.booking-point:before{content:"✓";color:var(--mint);font-weight:900}.form{background:rgba(7,10,9,.55);border:1px solid var(--line);border-radius:30px;padding:30px;box-shadow:var(--shadow)}.fieldgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#0e1412;color:var(--white);border-radius:13px;padding:14px;font:inherit;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--mint)}.field textarea{resize:vertical;min-height:86px}.form .button{width:100%;margin-top:15px}.direct{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.direct a{text-decoration:none;color:var(--mint)}
-    footer{padding:34px 0 95px;color:var(--muted2);font-size:12px}.footergrid{display:flex;justify-content:space-between;gap:30px}.legal{max-width:680px;text-align:right}.mobile-cta{display:none}
+    .cta-section{padding:118px 0;background:linear-gradient(145deg,#111d18,#0a0f0d 58%,#17120d);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.cta-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:54px;align-items:start}.booking-shell{background:#fff;border:1px solid rgba(116,242,191,.28);border-radius:30px;overflow:hidden;min-height:720px;box-shadow:0 28px 90px rgba(0,0,0,.36);scroll-margin-top:92px;outline:none}.booking-shell:target{border-color:rgba(116,242,191,.82);box-shadow:0 28px 90px rgba(0,0,0,.36),0 0 0 5px rgba(116,242,191,.1)}.booking-shell.attention{animation:bookingPulse .72s ease-out}@keyframes bookingPulse{0%{transform:scale(.986);box-shadow:0 22px 70px rgba(0,0,0,.28),0 0 0 0 rgba(116,242,191,.42)}100%{transform:scale(1);box-shadow:0 28px 90px rgba(0,0,0,.36),0 0 0 10px rgba(116,242,191,0)}}.calendly-inline-widget{min-width:320px;height:720px}.booking-fallback{display:none;padding:24px;text-align:center;background:#0d1411;color:var(--white)}.booking-points{display:grid;gap:12px;margin:32px 0}.booking-point{display:flex;align-items:flex-start;gap:11px;color:var(--muted);font-size:14px}.booking-point:before{content:"✓";color:var(--mint);font-weight:900}.form{background:rgba(7,10,9,.55);border:1px solid var(--line);border-radius:30px;padding:30px;box-shadow:var(--shadow)}.fieldgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#0e1412;color:var(--white);border-radius:13px;padding:14px;font:inherit;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--mint)}.field textarea{resize:vertical;min-height:86px}.form .button{width:100%;margin-top:15px}.direct{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.direct a{text-decoration:none;color:var(--mint)}
+    footer{padding:34px 0 95px;color:var(--muted2);font-size:12px}.footergrid{display:flex;justify-content:space-between;gap:30px}.legal{max-width:680px;text-align:right}.mobile-cta{display:none}.booking-modal-open .navshell,.booking-modal-open .mobile-cta{visibility:hidden}
     .reveal{opacity:1;transform:none}
     .reveal.visible{opacity:1;transform:none}
     @media(max-width:980px){.hero-grid,.problem-grid,.architecture,.accept,.faq,.cta-grid{grid-template-columns:1fr}.hero{padding-top:48px}.hero-visual{height:520px}.trust-grid{grid-template-columns:1fr 1fr}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}.audience{grid-template-columns:1fr 1fr}.packages{grid-template-columns:1fr}.package-img{height:360px}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:280px}.gallery-card.wide{grid-column:span 2;grid-row:span 1;height:440px}.timeline{grid-template-columns:repeat(3,1fr)}.faq{gap:34px}}
@@ -57,7 +59,7 @@
       <button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
       <div class="navlinks">
         <a href="#outcome">How it works</a><a href="#packages">Packages</a><a href="#studio-directions">Studios</a><a href="#process">Process</a><a href="#faq">FAQ</a>
-        <a class="button primary" href="#consultation">Check your room →</a>
+        <a class="button primary" href="#booking-calendar">Book a 20-minute call →</a>
       </div>
     </nav>
   </div>
@@ -69,7 +71,7 @@
           <div class="kicker">Turnkey content infrastructure · South Florida</div>
           <h1>Your office becomes a one-touch content studio.</h1>
           <p class="lede">We design and install professional video-podcast rooms your team can actually use — acoustics, cameras, audio, lighting, recording, backup, training and support.</p>
-          <div class="hero-actions"><a class="button primary" href="#consultation">Book a feasibility call →</a><a class="button ghost" href="#packages">Explore build levels</a></div>
+          <div class="hero-actions"><a class="button primary" href="#booking-calendar">Book a 20-minute call →</a><a class="button ghost" href="#packages">Explore build levels</a></div>
           <div class="micro"><span>Projects from $10,000</span><span>Typical delivery 4–8 weeks</span></div>
         </div>
         <div class="hero-visual reveal"><img src="assets/hero.webp" alt="Premium turnkey office video podcast studio" fetchpriority="high"><div class="visual-tag"><span class="rec"></span>ONE-TOUCH CONTENT ROOM</div></div>
@@ -118,9 +120,9 @@
     <section class="section" id="packages"><div class="wrap">
       <div class="reveal"><div class="kicker">Three turnkey levels</div><h2>Right-sized for your room and publishing rhythm.</h2><p class="lede">Starting prices are planning anchors. Final scope follows a room consultation and current equipment quotes.</p></div>
       <div class="packages reveal">
-        <article class="card package"><div class="package-img"><img src="assets/starter.webp" alt="Starter office podcast studio concept"><span class="concept">ILLUSTRATIVE CONCEPT</span></div><div class="package-body"><div class="tier">STARTER STUDIO</div><div class="price">$10,000<small>+</small></div><p>Focused one- or two-person office setup.</p><ul><li>2 broadcast microphones</li><li>1–2 camera workflow</li><li>Lighting + targeted acoustics</li><li>Presets, SOP and training</li><li>30-day support</li></ul><a class="button ghost" href="#consultation">Check fit</a></div></article>
-        <article class="card package featured"><span class="recommended">MOST POPULAR</span><div class="package-img"><img src="assets/business.webp" alt="Business interview podcast studio concept"><span class="concept">ILLUSTRATIVE CONCEPT</span></div><div class="package-body"><div class="tier">BUSINESS STUDIO</div><div class="price">$29,500<small>+</small></div><p>Branded interview room for weekly publishing.</p><ul><li>3–4 broadcast microphones</li><li>3-camera interview workflow</li><li>Remote guest integration</li><li>Backup + editor handoff</li><li>60-day support</li></ul><a class="button primary" href="#consultation">Check fit →</a></div></article>
-        <article class="card package"><div class="package-img"><img src="assets/autonomous.webp" alt="Autonomous corporate content room concept"><span class="concept">ILLUSTRATIVE CONCEPT</span></div><div class="package-body"><div class="tier">AUTONOMOUS CONTENT ROOM</div><div class="price">$59,500<small>+</small></div><p>Premium managed system for teams and executives.</p><ul><li>3–4 camera premium system</li><li>One-touch scene control</li><li>Remote monitoring options</li><li>Automated file workflow</li><li>90-day support</li></ul><a class="button ghost" href="#consultation">Check fit</a></div></article>
+        <article class="card package"><div class="package-img"><img src="assets/starter.webp" alt="Starter office podcast studio concept"><span class="concept">ILLUSTRATIVE CONCEPT</span></div><div class="package-body"><div class="tier">STARTER STUDIO</div><div class="price">$10,000<small>+</small></div><p>Focused one- or two-person office setup.</p><ul><li>2 broadcast microphones</li><li>1–2 camera workflow</li><li>Lighting + targeted acoustics</li><li>Presets, SOP and training</li><li>30-day support</li></ul><a class="button ghost" href="#booking-calendar">Check fit</a></div></article>
+        <article class="card package featured"><span class="recommended">MOST POPULAR</span><div class="package-img"><img src="assets/business.webp" alt="Business interview podcast studio concept"><span class="concept">ILLUSTRATIVE CONCEPT</span></div><div class="package-body"><div class="tier">BUSINESS STUDIO</div><div class="price">$29,500<small>+</small></div><p>Branded interview room for weekly publishing.</p><ul><li>3–4 broadcast microphones</li><li>3-camera interview workflow</li><li>Remote guest integration</li><li>Backup + editor handoff</li><li>60-day support</li></ul><a class="button primary" href="#booking-calendar">Check fit →</a></div></article>
+        <article class="card package"><div class="package-img"><img src="assets/autonomous.webp" alt="Autonomous corporate content room concept"><span class="concept">ILLUSTRATIVE CONCEPT</span></div><div class="package-body"><div class="tier">AUTONOMOUS CONTENT ROOM</div><div class="price">$59,500<small>+</small></div><p>Premium managed system for teams and executives.</p><ul><li>3–4 camera premium system</li><li>One-touch scene control</li><li>Remote monitoring options</li><li>Automated file workflow</li><li>90-day support</li></ul><a class="button ghost" href="#booking-calendar">Check fit</a></div></article>
       </div>
     </div></section>
 
@@ -189,7 +191,7 @@
 
     <section class="cta-section" id="consultation"><div class="wrap cta-grid">
       <div class="reveal"><div class="kicker">Book your feasibility call</div><h2>Choose a time that works for you.</h2><p class="lede">Book a focused 20-minute Zoom call. We will review your room, workflow, timeline and investment range — then give you a direct next step.</p><div class="booking-points"><div class="booking-point">No sales presentation before we understand the room.</div><div class="booking-point">A direct recommendation: build, rent, wait or proceed.</div><div class="booking-point">Bring room dimensions and photos if they are available.</div></div><div class="direct"><a href="tel:+17868631721">Call +1 786-863-1721</a><span>·</span><a href="mailto:ceo@gonchar.group?subject=DH%20Studio%20Feasibility%20Call">ceo@gonchar.group</a></div></div>
-      <div class="booking-shell reveal" aria-label="Book a DH Studio feasibility call">
+      <div class="booking-shell reveal" id="booking-calendar" tabindex="-1" aria-label="Book a DH Studio feasibility call">
         <div class="calendly-inline-widget" data-url="https://calendly.com/gonchargroup/dh-studio-content-room-feasibility-call?background_color=ffffff&text_color=0d1612&primary_color=0b8f63" style="min-width:320px;height:720px"></div>
         <noscript><div class="booking-fallback" style="display:block"><a class="button primary" href="https://calendly.com/gonchargroup/dh-studio-content-room-feasibility-call">Open booking calendar →</a></div></noscript>
       </div>
@@ -198,7 +200,7 @@
 
   <footer><div class="wrap footergrid"><div><b style="color:var(--white)">DH STUDIO</b><br>Turnkey content rooms · South Florida</div><div class="legal">© 2026 Gonchar Group LLC. Illustrative room concepts are not client-installation photography. No audience, revenue or lead guarantees. Electrical, structural, permitting and licensed-trade work are scoped separately where required. This site uses no first-party analytics; the embedded Calendly booking tool may use cookies under Calendly’s privacy notice.</div></div></footer>
 
-  <div class="mobile-cta"><a class="button primary" href="#consultation">Book a 20-min call →</a></div>
+  <div class="mobile-cta"><a class="button primary" href="#booking-calendar">Book a 20-minute call →</a></div>
 
   <!-- Official Calendly widget is dynamically versioned; Calendly does not publish a stable SRI hash. -->
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
@@ -208,8 +210,32 @@
     links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    const bookingTarget=document.getElementById('booking-calendar');
+    const syncBookingModal=()=>document.body.classList.toggle('booking-modal-open',!!document.querySelector('.calendly-overlay'));
+    new MutationObserver(syncBookingModal).observe(document.body,{childList:true});
+    const bookingUrl='https://calendly.com/gonchargroup/dh-studio-content-room-feasibility-call?background_color=ffffff&text_color=0d1612&primary_color=0b8f63';
+    const openBookingFallback=()=>{
+      history.replaceState(null,'','#booking-calendar');
+      const root=document.documentElement,previous=root.style.scrollBehavior;
+      root.style.scrollBehavior='auto';
+      bookingTarget.scrollIntoView({block:'start',inline:'nearest'});
+      bookingTarget.focus({preventScroll:true});
+      bookingTarget.classList.remove('attention');void bookingTarget.offsetWidth;bookingTarget.classList.add('attention');
+      requestAnimationFrame(()=>{root.style.scrollBehavior=previous});
+      window.setTimeout(()=>bookingTarget.classList.remove('attention'),800);
+    };
+    document.querySelectorAll('a[href="#booking-calendar"]').forEach(link=>link.addEventListener('click',e=>{
+      e.preventDefault();
+      if(window.Calendly&&typeof window.Calendly.initPopupWidget==='function'){
+        window.Calendly.initPopupWidget({url:bookingUrl});
+      }else{
+        openBookingFallback();
+      }
+    }));
     const mobileCta=document.querySelector('.mobile-cta');
-    const syncMobileCta=()=>mobileCta.classList.toggle('show',window.scrollY>620);
+    let bookingInView=false;
+    const syncMobileCta=()=>mobileCta.classList.toggle('show',window.scrollY>620&&!bookingInView);
+    new IntersectionObserver(([entry])=>{bookingInView=entry.isIntersecting;syncMobileCta()},{threshold:.08}).observe(bookingTarget);
     window.addEventListener('scroll',syncMobileCta,{passive:true});syncMobileCta();
   </script>
 </body>
