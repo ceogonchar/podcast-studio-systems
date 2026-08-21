@@ -26,7 +26,8 @@ Deployment source: the repository's `main` branch via GitHub Pages.
 - Single responsive HTML file with no build step
 - Local optimized WebP imagery
 - Desktop and mobile navigation
-- Conversion form opens a pre-filled email in the visitor's mail app
+- Embedded Calendly booking for the dedicated 20-minute DH Studio feasibility call
+- Booking URL: https://calendly.com/gonchargroup/dh-studio-content-room-feasibility-call
 - Structured data and social metadata included
-- No analytics, cookies, pixels or third-party JavaScript
+- No first-party analytics or tracking pixels; embedded Calendly is the only third-party widget
 - Concept visuals are labeled as illustrative, not client-installation photography

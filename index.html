@@ -40,7 +40,7 @@
     .timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:54px}.phase{padding:23px 18px;min-height:185px;border-top:1px solid var(--line)}.phase .pn{font-size:11px;color:var(--mint);font-weight:850;letter-spacing:.12em}.phase h3{font-size:17px;margin:25px 0 10px}.phase p{font-size:13px;color:var(--muted)}
     .accept{display:grid;grid-template-columns:.92fr 1.08fr;gap:74px;align-items:center}.checklist{display:grid;grid-template-columns:1fr 1fr;gap:12px}.check{padding:17px 17px 17px 47px;border:1px solid var(--line);border-radius:14px;position:relative;color:#cdd5d1;font-size:14px;background:rgba(255,255,255,.022)}.check:before{content:"✓";position:absolute;left:18px;color:var(--mint);font-weight:950}.proofnote{margin-top:20px;color:var(--muted2);font-size:12px}
     .faq{display:grid;grid-template-columns:.68fr 1.32fr;gap:80px}.faq-list{border-top:1px solid var(--line)}details{border-bottom:1px solid var(--line);padding:0}summary{cursor:pointer;list-style:none;font-size:18px;font-weight:760;padding:23px 44px 23px 0;position:relative}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:4px;top:18px;font-size:28px;color:var(--mint);font-weight:400}details[open] summary:after{content:"−"}.answer{color:var(--muted);padding:0 45px 24px 0;max-width:740px}
-    .cta-section{padding:118px 0;background:linear-gradient(145deg,#111d18,#0a0f0d 58%,#17120d);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.cta-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:start}.form{background:rgba(7,10,9,.55);border:1px solid var(--line);border-radius:30px;padding:30px;box-shadow:var(--shadow)}.fieldgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#0e1412;color:var(--white);border-radius:13px;padding:14px;font:inherit;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--mint)}.field textarea{resize:vertical;min-height:86px}.form .button{width:100%;margin-top:15px}.direct{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.direct a{text-decoration:none;color:var(--mint)}
+    .cta-section{padding:118px 0;background:linear-gradient(145deg,#111d18,#0a0f0d 58%,#17120d);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.cta-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:54px;align-items:start}.booking-shell{background:#fff;border:1px solid rgba(116,242,191,.28);border-radius:30px;overflow:hidden;min-height:720px;box-shadow:0 28px 90px rgba(0,0,0,.36)}.calendly-inline-widget{min-width:320px;height:720px}.booking-fallback{display:none;padding:24px;text-align:center;background:#0d1411;color:var(--white)}.booking-points{display:grid;gap:12px;margin:32px 0}.booking-point{display:flex;align-items:flex-start;gap:11px;color:var(--muted);font-size:14px}.booking-point:before{content:"✓";color:var(--mint);font-weight:900}.form{background:rgba(7,10,9,.55);border:1px solid var(--line);border-radius:30px;padding:30px;box-shadow:var(--shadow)}.fieldgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#0e1412;color:var(--white);border-radius:13px;padding:14px;font:inherit;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--mint)}.field textarea{resize:vertical;min-height:86px}.form .button{width:100%;margin-top:15px}.direct{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.direct a{text-decoration:none;color:var(--mint)}
     footer{padding:34px 0 95px;color:var(--muted2);font-size:12px}.footergrid{display:flex;justify-content:space-between;gap:30px}.legal{max-width:680px;text-align:right}.mobile-cta{display:none}
     .reveal{opacity:1;transform:none}
     .reveal.visible{opacity:1;transform:none}
@@ -188,27 +188,20 @@
     </div></section>
 
     <section class="cta-section" id="consultation"><div class="wrap cta-grid">
-      <div class="reveal"><div class="kicker">Next step</div><h2>Is your room viable for a one-touch studio?</h2><p class="lede">Start with a 20-minute feasibility call. We will give you a direct answer: build, rent, wait or proceed to a room consultation.</p><div class="direct"><a href="tel:+17868631721">Call +1 786-863-1721</a><span>·</span><a href="mailto:ceo@gonchar.group?subject=Studio%20Feasibility%20Call">ceo@gonchar.group</a></div></div>
-      <form class="form reveal" id="leadForm">
-        <div class="fieldgrid">
-          <div class="field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
-          <div class="field"><label for="company">Company</label><input id="company" name="company" autocomplete="organization" required></div>
-          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-          <div class="field"><label for="location">Room location</label><input id="location" name="location" placeholder="Miami, Fort Lauderdale…"></div>
-          <div class="field"><label for="frequency">Recording frequency</label><select id="frequency" name="frequency"><option>Weekly or more</option><option>2–3 times per month</option><option>Monthly</option><option>Still evaluating</option></select></div>
-          <div class="field"><label for="budget">Investment range</label><select id="budget" name="budget"><option>$10K–$25K</option><option>$25K–$50K</option><option>$50K–$100K</option><option>$100K+</option><option>Not decided</option></select></div>
-          <div class="field full"><label for="details">Room and launch details</label><textarea id="details" name="details" placeholder="Approximate dimensions, target launch date and what you want to record"></textarea></div>
-        </div>
-        <button class="button primary" type="submit">Email my room details →</button>
-        <p class="small" style="margin:14px 0 0">No spam or automated mailing. This button opens a pre-filled email in your mail app.</p>
-      </form>
+      <div class="reveal"><div class="kicker">Book your feasibility call</div><h2>Choose a time that works for you.</h2><p class="lede">Book a focused 20-minute Zoom call. We will review your room, workflow, timeline and investment range — then give you a direct next step.</p><div class="booking-points"><div class="booking-point">No sales presentation before we understand the room.</div><div class="booking-point">A direct recommendation: build, rent, wait or proceed.</div><div class="booking-point">Bring room dimensions and photos if they are available.</div></div><div class="direct"><a href="tel:+17868631721">Call +1 786-863-1721</a><span>·</span><a href="mailto:ceo@gonchar.group?subject=DH%20Studio%20Feasibility%20Call">ceo@gonchar.group</a></div></div>
+      <div class="booking-shell reveal" aria-label="Book a DH Studio feasibility call">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/gonchargroup/dh-studio-content-room-feasibility-call?background_color=ffffff&text_color=0d1612&primary_color=0b8f63" style="min-width:320px;height:720px"></div>
+        <noscript><div class="booking-fallback" style="display:block"><a class="button primary" href="https://calendly.com/gonchargroup/dh-studio-content-room-feasibility-call">Open booking calendar →</a></div></noscript>
+      </div>
     </div></section>
   </main>
 
-  <footer><div class="wrap footergrid"><div><b style="color:var(--white)">DH STUDIO</b><br>Turnkey content rooms · South Florida</div><div class="legal">© 2026 Gonchar Group LLC. Illustrative room concepts are not client-installation photography. No audience, revenue or lead guarantees. Electrical, structural, permitting and licensed-trade work are scoped separately where required. No analytics cookies or tracking pixels.</div></div></footer>
+  <footer><div class="wrap footergrid"><div><b style="color:var(--white)">DH STUDIO</b><br>Turnkey content rooms · South Florida</div><div class="legal">© 2026 Gonchar Group LLC. Illustrative room concepts are not client-installation photography. No audience, revenue or lead guarantees. Electrical, structural, permitting and licensed-trade work are scoped separately where required. This site uses no first-party analytics; the embedded Calendly booking tool may use cookies under Calendly’s privacy notice.</div></div></footer>
 
-  <div class="mobile-cta"><a class="button primary" href="#consultation">Check your room →</a></div>
+  <div class="mobile-cta"><a class="button primary" href="#consultation">Book a 20-min call →</a></div>
 
+  <!-- Official Calendly widget is dynamically versioned; Calendly does not publish a stable SRI hash. -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <script>
     const menu=document.querySelector('.menu'),links=document.querySelector('.navlinks');
     menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',open);menu.textContent=open?'×':'☰'});
@@ -218,12 +211,6 @@
     const mobileCta=document.querySelector('.mobile-cta');
     const syncMobileCta=()=>mobileCta.classList.toggle('show',window.scrollY>620);
     window.addEventListener('scroll',syncMobileCta,{passive:true});syncMobileCta();
-    document.getElementById('leadForm').addEventListener('submit',e=>{
-      e.preventDefault();const f=new FormData(e.currentTarget);
-      const subject=`Studio feasibility — ${f.get('company')}`;
-      const body=`Name: ${f.get('name')}\nCompany: ${f.get('company')}\nEmail: ${f.get('email')}\nRoom location: ${f.get('location')}\nRecording frequency: ${f.get('frequency')}\nInvestment range: ${f.get('budget')}\n\nRoom / launch details:\n${f.get('details')}`;
-      window.location.href=`mailto:ceo@gonchar.group?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    });
   </script>
 </body>
 </html>
